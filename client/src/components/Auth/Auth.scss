@@ -1,0 +1,130 @@
+@import "../../Styles.scss";
+
+.auth {
+  width: 100%;
+  height: 100vh;
+  background: url(../../images/03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .form-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 430px;
+    border: 2px solid $font;
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.781);
+
+    .lockIcon {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: $button;
+      i {
+        font-size: 35px;
+        color: $font;
+        margin-top: 28%;
+      }
+    }
+    h3 {
+      display: flex;
+      justify-content: center;
+      color: $font;
+      margin: 25px 0 25px 0;
+    }
+    form {
+      label {
+        font-family: "Libre Baskerville", serif;
+        color: $font;
+        font-size: 0.9em;
+        font-weight: 550;
+        letter-spacing: 0.09em;
+      }
+      input {
+        font-family: "Libre Baskerville", serif;
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+        width: 97%;
+        height: 30px;
+        border-radius: 5px;
+      }
+      .signup-input {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        input {
+          width: 95%;
+        }
+      }
+    }
+    button {
+      @include btn(97%, 35px);
+      display: flex;
+      justify-content: center;
+      margin: 15px auto;
+    }
+    .sign-btn {
+      background-color: $button;
+
+      &:hover {
+        color: $font;
+        transition: all 0.3s;
+        border-radius: 25px;
+        background-color: #46b5ff;
+        box-shadow: rgb(104, 104, 104) 0px 0px 15px 0px;
+      }
+    }
+    .google-btn {
+      background-color: #1ef84d;
+
+      &:hover {
+        color: $font;
+        transition: all 0.3s;
+        border-radius: 25px;
+        background-color: #42ec67;
+        box-shadow: rgb(104, 104, 104) 0px 0px 15px 0px;
+      }
+      span {
+        padding: 0;
+        margin: 0;
+        i {
+          font-size: 18px;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .home-btn {
+      background-color: $button2;
+      &:hover {
+        transition: all 0.3s;
+        border-radius: 25px;
+        background-color: #fc3b8c;
+        color: $font;
+        box-shadow: rgb(104, 104, 104) 0px 0px 15px 0px;
+      }
+    }
+
+    .Signin-btn {
+      justify-content: end;
+      background-color: transparent;
+      margin: 0;
+      color: $font;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .form-control {
+    margin: 0 auto;
+  }
+}

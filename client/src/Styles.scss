@@ -1,0 +1,18 @@
+$primary : #191c25 ;
+$secondary  : #1f2235 ;
+$success  : #313552 ;
+$button : #22a1f7  ;
+$button2 : #ff227e  ;
+$font  : #fffffa;
+
+@mixin btn ($width , $height) {
+  width: $width;
+  line-height: $height;
+  border-radius: 12px;
+  border: none;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  cursor: pointer;
+  transition: all 0.3s;
+}

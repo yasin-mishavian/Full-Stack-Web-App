@@ -1,0 +1,70 @@
+@import "./Styles.scss";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif, "Libre Baskerville", serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 96%;
+  max-width: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0px 20px 0px 20px;
+}
+.posts {
+  width: 74%;
+  margin-block: 30px;
+}
+.form {
+  width: 26%;
+}
+
+@media (max-width: 1200px) {
+  .posts {
+    width: 60%;
+  }
+  .form {
+    width: 40%;
+  }
+}
+@media (max-width: 960px) {
+  .posts {
+    width: 60%;
+  }
+  .form {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .posts {
+    width: 45%;
+  }
+  .form {
+    width: 50%;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    flex-direction: column-reverse;
+    .posts {
+      width: 80%;
+      max-width: 370px;
+      min-width: 85%;
+      margin: 30px auto;
+    }
+    .form {
+      width: 80%;
+      max-width: 370px;
+      min-width: 85%;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../Styles.scss";
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr) ) ;
+  grid-gap: 25px;
+}
+.loading{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.3rem;
+  color: $font;
+}

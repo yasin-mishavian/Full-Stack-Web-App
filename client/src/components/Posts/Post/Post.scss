@@ -1,0 +1,135 @@
+@import "../../../Styles.scss";
+
+.post-item {
+  background: $secondary;
+  transition: all 0.3s;
+  border-radius: 20px;
+  border: 1px solid $font;
+  color: $font;
+  box-shadow: 1px 0px 10px 3px rgba(0, 0, 0, 0.678);
+  overflow: hidden;
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+  }
+}
+
+.post-top {
+  height: 180px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  .post-update {
+    position: relative;
+    .bg-title {
+      position: absolute;
+      height: 55px;
+      width: 100%;
+      top: 0;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      background-color: rgba(0, 0, 0, 0.541);
+      z-index: 99;
+    }
+    button {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      z-index: 999;
+      background-color: transparent;
+      border: none;
+      font-size: 1.5rem;
+      color: $font;
+      margin: 8px 15px 0px 0px;
+    }
+  }
+  p {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    color: $font;
+    font-size: 14px;
+    margin: 33px 0px 0px 15px;
+  }
+  h1 {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    color: $font;
+    font-size: 17px;
+    margin: 10px 0px 0px 15px;
+  }
+
+  img {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+}
+
+.post-bottom {
+  height: 150px;
+  margin-inline: 12px;
+  overflow: hidden;
+  h1 {
+    padding: 8px 0px 6px 0px;
+    font-size: 21px;
+    color: $font;
+  }
+  h2 {
+    padding: 8px 0px 6px 0px;
+    font-size: 14px;
+    color: rgb(212, 212, 212);
+  }
+  p {
+    padding: 8px 0px 6px 0px;
+    font-size: 14px;
+    color: rgb(212, 212, 212);
+  }
+}
+
+.like {
+  color: red;
+}
+.post-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  bottom: 0;
+  span {
+    font-size: 15px;
+    font-weight: 550;
+  }
+  button:nth-child(1) {
+    width: 95px;
+    line-height: 30px;
+    background-color: $button;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    cursor: pointer;
+    &:hover {
+      transition: all 0.3s;
+      background-color: #46b5ff;
+      color: $font;
+      box-shadow: rgb(104, 104, 104) 0px 0px 15px 0px;
+    }
+  }
+
+  button:nth-child(3) {
+    width: 95px;
+    line-height: 30px;
+    background-color: $button2;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    &:hover {
+      transition: all 0.3s;
+      background-color: #fc3b8c;
+      color: $font;
+      box-shadow: rgb(104, 104, 104) 0px 0px 15px 0px;
+    }
+  }
+}

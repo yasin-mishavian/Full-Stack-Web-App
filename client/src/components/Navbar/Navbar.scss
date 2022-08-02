@@ -1,0 +1,61 @@
+@import "../../Styles.scss";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 96%;
+  max-width: 1600px;
+  height: 65px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid $font;
+  border-radius: 15px;
+  background-color: $primary;
+  box-shadow: 4px 6px 10px 20px rgba(0, 0, 0, 0.089);
+  .img-user {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .logout {
+    @include btn(160px, 35px);
+    background-color: $button2;
+    margin-inline: 20px;
+    color: $font;
+    &:hover {
+      transition: all 0.3s;
+      border-radius: 25px;
+      background-color: #fc3b8c;
+      box-shadow: rgb(104, 104, 104) 0px 0px 15px 0px;
+    }
+  }
+  .sign-in {
+    @include btn(160px, 35px);
+    background-color: $button;
+    margin-inline: 20px;
+    color: $font;
+    &:hover {
+      transition: all 0.3s;
+      border-radius: 25px;
+      background-color: #45b5ff;
+      box-shadow: rgb(104, 104, 104) 0px 0px 15px 0px;
+    }
+  }
+}
+
+.user {
+  font-size: 1.3em;
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  color: $font;
+  margin-inline: 20px;
+}
+
+@media (max-width: 540px) {
+  .navbar {
+    justify-content: center;
+  }
+  .gradient {
+    display: none;
+  }
+}
